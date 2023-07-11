@@ -80,7 +80,7 @@ function page() {
           className='md:w-1/2 space-y-4 w-full my-10 '
         >
           <h1 className={`${raleway.className} text-xl tracking-wide font-bold md:text-3xl text-center    `} >Hey everyone👋 I'm Rohan Wandre</h1>
-          <h1 className={`${raleway.className} text-sm tracking-wide font-normal md:text-xl  text-center   `} >Technical Head at IEEE SIES GST | React Native Developer | Full Stack Developer | Open Source</h1>
+          <h1 className={`${raleway.className} text-sm tracking-wide font-normal md:text-xl  text-center   `} >React Native Developer | Full Stack Developer | Open Source</h1>
         </motion.div>
 
       </div>

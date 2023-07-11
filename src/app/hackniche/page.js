@@ -159,7 +159,7 @@ function page() {
 
         {/* Description */}
         <div className='space-y-5'>
-          <h1 className={`${manrope.className} text-sm  font-normal md:text-lg text-gray-600 `}>We faced difficulty in setting up AWS Lambda functions</h1>
+          <h1 className={`${manrope.className} text-sm  font-normal md:text-lg text-gray-600 `}>We faced difficulty in setting up AWS Lambda functions and deployment.</h1>
         </div>
       </div>
 
