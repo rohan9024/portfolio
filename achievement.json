@@ -6,7 +6,7 @@
     "keyFeature": ["Safe routing", "URL parameters", "URL Encoding"],
     "images": ["/SIH-1.jpg", "/SIH-2.jpg"],
     "banner": "/SIH-1.jpg",
-    "route": "SIH"
+    "route": null
   },
 
   {
@@ -20,7 +20,7 @@
     ],
     "images": ["/hackniche-1.jpeg", "/hackniche-2.jpeg"],
     "banner": "/hackniche-1.jpeg",
-    "route": "hackniche"
+    "route": null
   },
   {
     "name": "ERR-404 Hackathon at M.H. Saboo Siddik",
@@ -32,7 +32,7 @@
     ],
     "images": ["/err-1.jpeg", "/err-2.jpeg", "/err-3.jpeg", "/err-4.jpeg"],
     "banner": "/err-3.jpeg",
-    "route": "err404"
+    "route": null
   },
   {
     "name": "DJ Sanghvi Codeshastra",
@@ -46,7 +46,7 @@
       "/codeshastra-4.jpg"
     ],
     "banner": "/codeshastra-2.jpg",
-    "route": "codeshastra"
+    "route": null
   },
   {
     "name": "Winner at Open Source Competition ",
@@ -60,7 +60,7 @@
       "/codeshastra-4.jpg"
     ],
     "banner": "/clueless.jpeg",
-    "route": "clueless"
+    "route": null
   },
   {
     "name": "Hacktoberfest 2022",
@@ -87,6 +87,6 @@
     "keyFeature": null,
     "images": null,
     "banner": "/codepeak-1.jpeg",
-    "route": "codepeak"
+    "route": null
   }
 ]
