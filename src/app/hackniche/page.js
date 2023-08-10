@@ -288,9 +288,9 @@ function page() {
         </Link>
 
         <Link
-          href="/err404"
+          href="/netflix-clone"
           className='hidden md:flex  flex-col md:flex-row justify-center items-center p-2'>
-          <h1 className={`${raleway.className} text-md font-bold md:text-3xl  `} >Error404 Hackathon</h1>
+          <h1 className={`${raleway.className} text-md font-bold md:text-3xl  `} >Netflix Clone</h1>
           <div className='object-contain rounded-full cursor-pointer lg:p-1 p-4 transition hover:bg-gray-300 hover:duration-150'>
             <Image
               src='/right.png'
@@ -301,7 +301,7 @@ function page() {
           </div>
         </Link>
         <Link
-          href="/err404"
+          href="/netflix-clone"
           className='md:hidden flex flex-col md:flex-row justify-center items-center p-2'>
           <div
             className='object-contain rounded-full cursor-pointer p-4 transition hover:bg-gray-300 hover:duration-150'>
@@ -312,7 +312,7 @@ function page() {
               alt="right icon"
             />
           </div>
-          <h1 className={`${raleway.className} text-md font-bold md:text-3xl `} >Error404 Hackathon</h1>
+          <h1 className={`${raleway.className} text-md font-bold md:text-3xl `} >Netflix Clone</h1>
         </Link>
       </div>
 
