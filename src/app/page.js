@@ -30,6 +30,7 @@ import moviesdbapi from "../../assets/moviesdbapi.svg";
 import { easeOut, motion, useScroll } from "framer-motion"
 import { useState } from 'react';
 import Link from 'next/link';
+import Head from 'next/head'
 
 const raleway = Raleway({
   weight: ['400', '700'],
@@ -60,8 +61,11 @@ export default function Home() {
 
   return (
     <div className='w-screen '>
-
-
+<Head>
+        <title>My Portfolio</title>
+    	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:title" content="My page title" key="title" />
+      </Head>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -178,7 +182,7 @@ export default function Home() {
         <Link href="/netflix-clone" >
           <motion.div
             initial={{ opacity: 0, y: -120 }}
-         
+
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 1 }}
 
@@ -240,7 +244,7 @@ export default function Home() {
         <Link href="/hackniche">
           <motion.div
             initial={{ opacity: 0, y: -120 }}
-         
+
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 1 }}
             className='md:flex md:flex-row flex flex-col border border-gray-100 rounded-lg shadow-2xl md:w-[1140px] md:h-[489px] w-[300px] h-[350px] '>
@@ -292,7 +296,7 @@ export default function Home() {
         <Link href="/social-media-manager">
           <motion.div
             initial={{ opacity: 0, y: -120 }}
-         
+
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 1 }}
             className='md:flex md:flex-row flex flex-col border border-gray-100 rounded-lg shadow-2xl md:w-[1140px] md:h-[489px] w-[300px] h-[350px] '>
@@ -343,7 +347,7 @@ export default function Home() {
         {/* Social Media Manager App*/}
         <Link href="/social-media-manager">
           <motion.div initial={{ opacity: 0, y: -120 }}
-         
+
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 1 }}
             className='md:flex md:flex-row flex flex-col border border-gray-100 rounded-lg shadow-2xl md:w-[1140px] md:h-[489px] w-[300px] h-[370px] '>
@@ -394,7 +398,7 @@ export default function Home() {
         <Link href="/donation-box" >
           <motion.div
             initial={{ opacity: 0, y: -120 }}
-         
+
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 1 }}
             className='md:flex md:flex-row flex flex-col border border-gray-100 rounded-lg shadow-2xl md:w-[1140px] md:h-[489px] w-[300px] h-[370px] '>
@@ -449,7 +453,7 @@ export default function Home() {
           <motion.div
 
             initial={{ opacity: 0, y: -120 }}
-         
+
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 1 }}
             className='md:flex md:flex-row flex flex-col border border-gray-100 rounded-lg shadow-2xl md:w-[1140px] md:h-[489px] w-[300px] h-[370px] '>
@@ -501,7 +505,7 @@ export default function Home() {
         <Link href="/codeshastra">
           <motion.div
             initial={{ opacity: 0, y: -120 }}
-         
+
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 1 }}
             className='md:flex md:flex-row flex flex-col border border-gray-100 rounded-lg shadow-2xl md:w-[1140px] md:h-[489px] w-[300px] h-[380px] '>
@@ -634,3 +638,5 @@ export default function Home() {
     </div >
   )
 }
+
+
