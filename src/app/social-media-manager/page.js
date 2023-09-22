@@ -171,28 +171,28 @@ function page() {
                 {/* Description */}
                 <div className='space-y-5'>
                     <Image
-                        src="/smm1.png"
+                        src="/smm1.PNG"
                         width={667}
                         height={457}
                         alt="Social Media Manager Image"
                         className='object-contain  '
                     />
                     <Image
-                        src="/smm2.png"
+                        src="/smm2.PNG"
                         width={667}
                         height={457}
                         alt="Social Media Manager Image"
                         className='object-contain  '
                     />
                     <Image
-                        src="/smm3.png"
+                        src="/smm3.PNG"
                         width={667}
                         height={457}
                         alt="Social Media Manager Image"
                         className='object-contain  '
                     />
                     <Image
-                        src="/smm4.png"
+                        src="/smm4.PNG"
                         width={667}
                         height={457}
                         alt="Social Media Manager Image"
