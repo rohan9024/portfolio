@@ -61,9 +61,9 @@ export default function Home() {
 
   return (
     <div className='w-screen '>
-<Head>
+      <Head>
         <title>My Portfolio</title>
-    	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta property="og:title" content="My page title" key="title" />
       </Head>
       <motion.div
@@ -71,7 +71,7 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.7 }}
         className=' flex md:justify-center justify-evenly items-center space-x-12 mt-10 md:p-10 md:ml-20 md:mr-20'>
-        <div className={`${raleway.className} text-xl md:text-3xl cursor-pointer transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-105 duration-300`} >
+        <div className={`${raleway.className} text-xl md:text-3xl cursor-pointer transition ease-in-out  hover:-translate-y-2 hover:scale-105 duration-300`} >
           <h1 className='text-center'>ROHAN WANDRE</h1>
         </div>
         {
@@ -111,11 +111,11 @@ export default function Home() {
             )
         }
         <div className={`${manrope.className} hidden md:flex md:justify-evenly md:items-center md:font-medium md:w-92 space-x-12`}>
-          <a href="https://drive.google.com/file/d/1-aYazGEtQyGtNaLtDeo3a1TWTvDnlPqL/view?usp=sharing" className='transition ease-in delay-150 hover:text-gray-300 text-gray-500 duration-300 cursor-pointer '>Resume</a>
-          <Link href="/experience" className=' transition ease-in delay-150 hover:text-gray-300  text-gray-500 duration-300 cursor-pointer'>Experience</Link>
-          <Link href="/achievements" className=' transition ease-in delay-150 hover:text-gray-300  text-gray-500 duration-300 cursor-pointer'>Achievements</Link>
-          <Link href="/about-me" className=' transition ease-in delay-150 hover:text-gray-300  text-gray-500 duration-300 cursor-pointer'>About me</Link>
-          <a href="tel:9137244728" className=' transition ease-in delay-150 hover:text-gray-300  text-gray-500 duration-300 cursor-pointer'>Contact</a>
+          <a href="https://drive.google.com/file/d/1-aYazGEtQyGtNaLtDeo3a1TWTvDnlPqL/view?usp=sharing" className='transition ease-in  hover:text-gray-300 text-gray-500 duration-300 cursor-pointer '>Resume</a>
+          <Link href="/experience" className=' transition ease-in  hover:text-gray-300  text-gray-500 duration-300 cursor-pointer'>Experience</Link>
+          <Link href="/achievements" className=' transition ease-in  hover:text-gray-300  text-gray-500 duration-300 cursor-pointer'>Achievements</Link>
+          <Link href="/about-me" className=' transition ease-in  hover:text-gray-300  text-gray-500 duration-300 cursor-pointer'>About me</Link>
+          <a href="tel:9137244728" className=' transition ease-in  hover:text-gray-300  text-gray-500 duration-300 cursor-pointer'>Contact</a>
         </div>
       </motion.div>
       <motion.nav
@@ -587,7 +587,7 @@ export default function Home() {
       {/* <Footer /> */}
       <div className=' my-20 '>
         <Link href="/achievements" className='flex justify-center items-center ' >
-          <h1 className={`${raleway.className} text-xl rounded-full border border-gray-600 px-6 py-2 transition ease-in-out delay-150 hover:bg-gray-300 duration-300 cursor-pointer`}>Browse achievements</h1>
+          <h1 className={`${raleway.className} text-xl rounded-full border border-gray-600 px-6 py-2 transition ease-in-out  hover:bg-gray-300 duration-300 cursor-pointer`}>Browse achievements</h1>
         </Link>
       </div>
 
@@ -598,7 +598,7 @@ export default function Home() {
           <h1 className={`${raleway.className} md:text-2xl md:my-10 text-sm text-white mx-4 text-center my-2`}>If you have an idea or project you want to discuss, feel free to contact me.</h1>
           {/* Mail */}
           <section className='flex justify-center items-center my-4  '>
-            <button onClick={() => router.push('mailto:rohanwandre24@gmail.com')} className={`${manrope.className} md:text-2xl text-lg font-bold rounded-full bg-yellow-400 md:px-10 md:py-4 px-6 py-2 text-gray-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-500 duration-300 `}>Send me an Email</button>
+            <button onClick={() => router.push('mailto:rohanwandre24@gmail.com')} className={`${manrope.className} md:text-2xl text-lg font-bold rounded-full bg-yellow-400 md:px-10 md:py-4 px-6 py-2 text-gray-800 transition ease-in-out  hover:-translate-y-1 hover:scale-110 hover:bg-yellow-500 duration-300 `}>Send me an Email</button>
           </section>
           {/* Links */}
           <section className='flex space-x-10 items-center mt-20 justify-center'>
@@ -608,7 +608,7 @@ export default function Home() {
               height={40}
               alt="mail icon"
               onClick={() => router.push('mailto:rohanwandre24@gmail.com')}
-              className='object-contain transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer shadow-2xl'
+              className='object-contain transition ease-in-out  hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer shadow-2xl'
             />
             <a href="https://github.com/rohan9024">
               <Image
@@ -616,7 +616,7 @@ export default function Home() {
                 width={40}
                 height={40}
                 alt="github icon"
-                className='object-contain  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer'
+                className='object-contain  transition ease-in-out  hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer'
               />
             </a>
             <a href="https://www.linkedin.com/in/rohan-wandre-3796641b1/">
@@ -625,7 +625,7 @@ export default function Home() {
                 width={40}
                 height={40}
                 alt="linkedin icon"
-                className='object-contain transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer'
+                className='object-contain transition ease-in-out  hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer'
               />
             </a>
 
