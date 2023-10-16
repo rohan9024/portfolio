@@ -198,21 +198,11 @@ function page() {
 
                 {/* Description */}
                 <div className='space-y-3 '>
-                    <a href="https://github.com/rohan9024/netflix-clone" className={`${manrope.className} text-sm  font-normal md:text-lg text-blue-600 underline`}>https://github.com/rohan9024/netflix-clone</a>
+                    <a href="https://github.com/rohan9024/donation-box" className={`${manrope.className} text-sm  font-normal md:text-lg text-blue-600 underline`}>https://github.com/rohan9024/donation-box</a>
                 </div>
             </div>
 
 
-            {/* Deployment */}
-            <div className='flex flex-col ml-5 mr-5 mt-10 space-y-3 md:mr-5 lg:mx-10 xl:mx-96 md:mt-10'>
-                {/* title */}
-                <h1 className={`${manrope.className} text-xl font-bold md:text-3xl `}>Deployment</h1>
-
-                {/* Description */}
-                <div className='space-y-3'>
-                    <a href="https://netflix-clone-27ecb.firebaseapp.com/" className={`${manrope.className} text-sm  font-normal md:text-lg text-blue-600 underline`}>https://netflix-clone-27ecb.firebaseapp.com/</a>
-                </div>
-            </div>
 
 
             {/* Browse other projects */}
