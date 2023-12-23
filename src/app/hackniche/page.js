@@ -82,7 +82,7 @@ function page() {
       </div>
 
 
-      <div className='mt-20 md:mt-10 flex md:flex-row flex-col justify-center items-center space-y-6 md:space-y-0 shadow-lg border border-gray-300 bg-gray-100 md:bg-transparent md:border-none md:shadow-none px-4 mx-4 py-12   rounded-lg'>
+      <div className='mt-20 flex md:flex-row flex-col justify-center items-center md:space-x-10 space-y-6 md:space-y-0 shadow-lg border border-gray-300 bg-gray-100 dark:bg-black dark:border-gray-800 md:border-none md:bg-transparent md:shadow-none px-4 mx-4  py-12   rounded-lg'>
 
         <motion.div
           initial={{ x: -100, opacity: 0 }}

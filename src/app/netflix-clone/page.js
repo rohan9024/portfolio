@@ -67,7 +67,7 @@ function page() {
 
                 <Link
                     href="/"
-                    className='object-contain rounded-full cursor-pointer p-2 transition hover:bg-gray-300 dark:bg-black hover:duration-150'>
+                    className='object-contain rounded-full cursor-pointer p-2 transition hover:bg-gray-300 dark:bg-white hover:duration-150'>
                     <Image
                         src='/back.png'
                         width={20}
