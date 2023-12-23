@@ -1,7 +1,7 @@
 "use client"
 
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Inter, Manrope, Raleway } from 'next/font/google';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -21,13 +21,36 @@ const manrope = Manrope({
 });
 
 function page() {
+    const [darkMode, setDarkMode] = useState(false)
+
+    useEffect(() => {
+      if (typeof window !== 'undefined') {
+        const theme = localStorage.getItem('theme')
+        if (theme === 'dark') setDarkMode(true)
+      }
+  
+    }, [])
+  
+  
+    useEffect(() => {
+      if (darkMode) {
+        document.documentElement.classList.add('dark')
+        localStorage.setItem("theme", "dark")
+      }
+      else {
+        document.documentElement.classList.remove('dark')
+        localStorage.setItem("theme", "light")
+      }
+  
+    }, [darkMode])
+
     return (
-        <div className='flex flex-col justify-center items-center'>
-            <div className='hidden md:flex justify-center items-center'>
+        <div className='flex flex-col justify-center items-center dark:bg-black dark:text-white'>
+            <div className='hidden md:flex justify-center items-center dark:bg-black'>
 
                 <Link
                     href="/"
-                    className='object-contain rounded-full cursor-pointer p-4 transition hover:bg-gray-300 hover:duration-150'>
+                    className='object-contain rounded-full cursor-pointer p-4 transition hover:bg-gray-300 dark:bg-white hover:duration-150'>
                     <Image
                         src='/back.png'
                         width={25}
@@ -39,11 +62,11 @@ function page() {
                 <h1 className={`${raleway.className} text-2xl tracking-wide font-semibold md:text-3xl text-center p-10 `} >Experience</h1>
             </div>
 
-            <div className='md:hidden flex justify-center items-center'>
+            <div className='md:hidden flex justify-center items-center dark:bg-black'>
 
                 <Link
                     href="/"
-                    className='object-contain rounded-full cursor-pointer p-2 transition hover:bg-gray-300 hover:duration-150'>
+                    className='object-contain rounded-full cursor-pointer p-2 transition hover:bg-gray-300 dark:bg-white hover:duration-150'>
                     <Image
                         src='/back.png'
                         width={20}
@@ -100,7 +123,7 @@ function page() {
                             <h1 className='text-center md:text-lg lg:text-2xl text-sm bg-blue-600 px-3 py-3 md:w-56 lg:w-72 text-white rounded-lg shadow-lg cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 duration-300'>View Certification</h1>
                         </a>
                         <Link href="/chrome-extension-development" className={`${manrope.className} flex justify-center items-center font-normal`} >
-                            <h1 className='text-center md:text-lg lg:text-2xl text-sm border border-gray-400 px-3 py-3 md:w-44 lg:w-72 text-black rounded-lg shadow-lg cursor-pointer  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gray-300 duration-300'>Implementation</h1>
+                            <h1 className='text-center md:text-lg lg:text-2xl text-sm border border-gray-400 px-3 py-3 md:w-44 lg:w-72 text-black dark:text-white rounded-lg shadow-lg cursor-pointer  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gray-300 duration-300'>Implementation</h1>
                         </Link>
                     </div>
 
@@ -146,7 +169,7 @@ function page() {
                             <h1 className='text-center md:text-2xl text-sm bg-blue-600 px-3 py-3 md:w-72 text-white rounded-lg shadow-lg cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 duration-300'>View Certification</h1>
                         </a>
                         <Link href="/social-media-manager" className={`${manrope.className} flex justify-center items-center font-normal`} >
-                            <h1 className='text-center md:text-2xl text-sm border border-gray-400 px-3 py-3 md:w-72 text-black rounded-lg shadow-lg cursor-pointer  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gray-300 duration-300'>Implementation</h1>
+                            <h1 className='text-center md:text-2xl text-sm border border-gray-400 px-3 py-3 md:w-72 text-black dark:text-white rounded-lg shadow-lg cursor-pointer  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gray-300 duration-300'>Implementation</h1>
                         </Link>
                     </div>
 
@@ -192,7 +215,7 @@ function page() {
                             <h1 className='text-center md:text-2xl text-sm  bg-blue-600 px-3 py-3 md:w-72 text-white rounded-lg shadow-lg cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 duration-300'>View Certification</h1>
                         </a>
                         <Link href="/greyfeathers" className={`${manrope.className} flex justify-center items-center font-normal`} >
-                            <h1 className='text-center md:text-2xl text-sm  border border-gray-400 px-3 py-3 md:w-72 text-black rounded-lg shadow-lg cursor-pointer  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gray-300 duration-300'>Implementation</h1>
+                            <h1 className='text-center md:text-2xl text-sm  border border-gray-400 px-3 py-3 md:w-72 text-black dark:text-white rounded-lg shadow-lg cursor-pointer  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gray-300 duration-300'>Implementation</h1>
                         </Link>
                     </div>
                 </motion.div>

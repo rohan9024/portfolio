@@ -1,7 +1,7 @@
 "use client"
 
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Inter, Manrope, Raleway } from 'next/font/google';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -21,18 +21,43 @@ const manrope = Manrope({
 });
 
 function page() {
+  const [darkMode, setDarkMode] = useState(false)
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const theme = localStorage.getItem('theme')
+      if (theme === 'dark') setDarkMode(true)
+    }
+
+  }, [])
+
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem("theme", "dark")
+    }
+    else {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem("theme", "light")
+    }
+
+  }, [darkMode])
+
+  
   return (
-    <div className='flex flex-col justify-center items-center'>
+    <div className='flex flex-col justify-center items-center dark:bg-black dark:text-white p-6 h-screen'>
       <div className='hidden md:flex justify-center items-center'>
 
         <Link
           href="/"
-          className='object-contain rounded-full cursor-pointer p-4 transition hover:bg-gray-300 hover:duration-150'>
+          className='object-contain rounded-full cursor-pointer p-4 transition hover:bg-gray-300 dark:bg-white hover:duration-150 '>
           <Image
             src='/back.png'
             width={25}
             height={25}
             alt="back icon"
+            className=''
           />
         </Link>
 
@@ -43,7 +68,7 @@ function page() {
 
         <Link
           href="/"
-          className='object-contain rounded-full cursor-pointer p-2 transition hover:bg-gray-300 hover:duration-150'>
+          className='object-contain rounded-full cursor-pointer p-2 transition hover:bg-gray-300 dark:bg-white hover:duration-150'>
           <Image
             src='/back.png'
             width={20}

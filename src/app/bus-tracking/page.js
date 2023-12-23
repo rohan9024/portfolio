@@ -25,6 +25,7 @@ const manrope = Manrope({
 
 function page() {
     const [loading, setLoading] = useState(true);
+    const [darkMode, setDarkMode] = useState(false)
 
     useEffect(() => {
         // Simulate loading delay
@@ -33,17 +34,37 @@ function page() {
         }, 2000);
     }, []);
 
+    useEffect(() => {
+      if (typeof window !== 'undefined') {
+        const theme = localStorage.getItem('theme')
+        if (theme === 'dark') setDarkMode(true)
+      }
+  
+    }, [])
+  
+  
+    useEffect(() => {
+      if (darkMode) {
+        document.documentElement.classList.add('dark')
+        localStorage.setItem("theme", "dark")
+      }
+      else {
+        document.documentElement.classList.remove('dark')
+        localStorage.setItem("theme", "light")
+      }
+  
+    }, [darkMode])
 
 
     return (
         <>
 
-            <div className='w-screen h-screen flex flex-col '>
-                <div className='hidden bg-white w-full  md:flex fixed top-0 justify-center items-center'>
+            <div className='w-screen h-auto flex flex-col dark:bg-black dark:text-white'>
+                <div className='hidden bg-white dark:bg-black w-full  md:flex fixed top-0 justify-center items-center'>
 
                     <Link
                         href="/"
-                        className='object-contain rounded-full cursor-pointer p-4 transition hover:bg-gray-300 hover:duration-150'>
+                        className='object-contain rounded-full cursor-pointer p-4 transition dark:bg-white hover:bg-gray-300 hover:duration-150'>
                         <Image
                             src='/back.png'
                             width={25}
@@ -55,11 +76,11 @@ function page() {
                     <h1 className={`${raleway.className} text-2xl tracking-wide font-semibold md:text-3xl text-center p-10 `} >Project Details</h1>
                 </div>
 
-                <div className='md:hidden bg-white fixed top-0 w-full flex justify-center items-center p-5 space-x-3'>
+                <div className='md:hidden bg-white dark:bg-black  fixed top-0 w-full flex justify-center items-center p-5 space-x-3'>
 
                     <Link
                         href="/"
-                        className='object-contain rounded-full cursor-pointer p-2 transition hover:bg-gray-300 hover:duration-150'>
+                        className='object-contain rounded-full cursor-pointer p-2 transition dark:bg-white hover:bg-gray-300 hover:duration-150'>
                         <Image
                             src='/back.png'
                             width={20}
@@ -72,7 +93,7 @@ function page() {
                 </div>
 
 
-                <div className='mt-20 md:mt-10 flex md:flex-row flex-col justify-center items-center space-y-6 md:space-y-0 shadow-lg border border-gray-300 bg-gray-100 md:bg-transparent md:border-none md:shadow-none px-4 mx-4 py-12   rounded-lg'>
+                <div className=' mt-20 md:mt-10 flex md:flex-row flex-col justify-center items-center space-y-6 md:space-y-0 shadow-lg border border-gray-300 dark:border-gray-800 bg-gray-100 dark:bg-black md:bg-transparent md:border-none md:shadow-none px-4 mx-4 py-12   rounded-lg'>
 
                     <motion.div
                         initial={{ x: -100, opacity: 0 }}
@@ -246,9 +267,9 @@ function page() {
 
                     <Link
                         href="/spotify-clone"
-                        className='flex flex-col md:flex-row justify-center items-center p-2'>
+                        className='flex flex-col md:flex-row justify-center items-center p-2 md:dark:space-x-5 md:dark:space-y-0 dark:space-y-5'>
                         <div
-                            className='object-contain rounded-full cursor-pointer p-4 transition hover:bg-gray-300 hover:duration-150'>
+                            className='object-contain rounded-full cursor-pointer p-4 transition hover:bg-gray-300 dark:bg-white hover:duration-150'>
                             <Image
                                 src='/left.png'
                                 width={25}
@@ -262,11 +283,11 @@ function page() {
 
                     <Link
                         href="/social-media-manager"
-                        className='hidden md:flex flex-col md:flex-row justify-center items-center p-2'>
+                        className='hidden md:flex flex-col md:flex-row justify-center items-center p-2  md:dark:space-x-5'>
                         <h1 className={`${raleway.className} text-md font-bold md:text-3xl  `} >Social Media Manager</h1>
 
                         <div
-                            className='object-contain rounded-full cursor-pointer p-4 transition hover:bg-gray-300 hover:duration-150'>
+                            className='object-contain rounded-full cursor-pointer p-4 transition dark:bg-white hover:bg-gray-300 hover:duration-150'>
                             <Image
                                 src='/right.png'
                                 width={25}
@@ -278,9 +299,9 @@ function page() {
                     </Link>
                     <Link
                         href="/social-media-manager"
-                        className='md:hidden flex flex-col md:flex-row justify-center items-center p-2'>
+                        className='md:hidden flex flex-col md:flex-row justify-center items-center p-2 dark:space-y-5 '>
                         <div
-                            className='object-contain rounded-full cursor-pointer p-4 transition hover:bg-gray-300 hover:duration-150'>
+                            className='object-contain rounded-full cursor-pointer p-4 transition dark:bg-white  hover:bg-gray-300 hover:duration-150'>
                             <Image
                                 src='/right.png'
                                 width={25}

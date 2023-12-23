@@ -1,7 +1,7 @@
 "use client"
 
 import { Inter, Manrope, Raleway } from 'next/font/google';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import achievements from "../../../achievement.json"
 import Image from 'next/image';
@@ -21,17 +21,38 @@ const manrope = Manrope({
   subsets: ['latin'],
 });
 function page() {
+  const [darkMode, setDarkMode] = useState(false)
 
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const theme = localStorage.getItem('theme')
+      if (theme === 'dark') setDarkMode(true)
+    }
+
+  }, [])
+
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem("theme", "dark")
+    }
+    else {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem("theme", "light")
+    }
+
+  }, [darkMode])
 
   return (
-    <div className='flex justify-center items-center '>
+    <div className='flex justify-center items-center dark:bg-black dark:text-white'>
       <div>
         {/* Back button */}
         <div className='hidden md:flex justify-center items-center'>
 
           <Link
             href="/"
-            className='object-contain rounded-full cursor-pointer p-4 transition hover:bg-gray-300 hover:duration-150'>
+            className='object-contain rounded-full cursor-pointer p-4 transition hover:bg-gray-300 dark:bg-white hover:duration-150'>
             <Image
               src='/back.png'
               width={25}
@@ -47,7 +68,7 @@ function page() {
 
           <Link
             href="/"
-            className='object-contain rounded-full cursor-pointer p-2 transition hover:bg-gray-300 hover:duration-150'>
+            className='object-contain rounded-full cursor-pointer p-2 transition hover:bg-gray-300 dark:bg-white hover:duration-150'>
             <Image
               src='/back.png'
               width={20}
