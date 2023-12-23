@@ -95,7 +95,7 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7 }}
-          className=' flex md:justify-center justify-evenly items-center space-x-6 mt-10 md:p-10 md:ml-20 md:mr-20 md:space-x-20'>
+          className=' flex md:justify-center justify-evenly items-center  mt-10 md:p-10 md:ml-20 md:mr-20 md:space-x-20'>
           <div className={`${raleway.className}  text-lg md:text-3xl cursor-pointer transition ease-in-out  hover:-translate-y-2 hover:scale-105 duration-300`} >
             <h1 className='text-center'>ROHAN WANDRE</h1>
           </div>
