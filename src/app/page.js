@@ -138,7 +138,7 @@ export default function Home() {
               (
                 <motion.div
                   whileTap={{ scale: 0.97 }}
-                  className='md:hidden object-contain rounded-full p-4 dark:bg-gray-300' onClick={() => setMenu(false)}>
+                  className='md:hidden object-contain rounded-full p-4 dark:p-2 dark:bg-gray-300' onClick={() => setMenu(false)}>
                   <Image
                     src="/close.png"
                     width={20}
@@ -158,7 +158,7 @@ export default function Home() {
                   }}
                   whileTap={{ scale: 0.9 }}
                   whileInView={{ opacity: 1 }}
-                  className='md:hidden object-contain rounded-full p-4 dark:bg-gray-300' onClick={() => setMenu(true)}>
+                  className='md:hidden object-contain rounded-full p-4 dark:p-2 dark:bg-gray-300' onClick={() => setMenu(true)}>
                   <Image
                     src="/menu.png"
                     width={20}
