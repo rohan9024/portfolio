@@ -95,10 +95,44 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7 }}
-          className=' flex md:justify-center justify-evenly items-center space-x-12 mt-10 md:p-10 md:ml-20 md:mr-20 '>
-          <div className={`${raleway.className} text-xl md:text-3xl cursor-pointer transition ease-in-out  hover:-translate-y-2 hover:scale-105 duration-300`} >
+          className=' flex md:justify-center items-center space-x-6 mt-10 md:p-10 md:ml-20 md:mr-20 '>
+          <div className={`${raleway.className}  text-xl md:text-3xl cursor-pointer transition ease-in-out  hover:-translate-y-2 hover:scale-105 duration-300`} >
             <h1 className='text-center'>ROHAN WANDRE</h1>
           </div>
+          {
+              darkMode ?
+
+              (<div
+                onClick={() => {
+                  darkMode ? setDarkMode(false) : setDarkMode(true)
+                }}
+                className='md:hidden flex transition ease-in  hover:text-gray-300  text-gray-500 duration-300 cursor-pointer hover:scale-105 hover:-translate-y-3' >
+                <Image
+                  src="/darkMode.png"
+                  width={40}
+                  height={40}
+                  alt="darkMode icon"
+                  className='object-contain md:w-auto md:h-auto w-10 h-10 '
+                />
+              </div>)
+           
+                :
+                (<div
+                  onClick={() => {
+                    darkMode ? setDarkMode(false) : setDarkMode(true)
+                  }}
+                  className='md:hidden flex transition ease-in  hover:text-gray-300  text-gray-500 duration-300 cursor-pointer hover:scale-105 hover:-translate-y-3' >
+                  <Image
+                    src="/lightMode.png"
+                    width={40}
+                    height={40}
+                    alt="lightMode icon"
+                    className='object-contain md:w-auto md:h-auto w-10 h-10 '
+                  />
+                </div>)
+                
+              
+              }
           {
             menu ?
               (
@@ -130,7 +164,7 @@ export default function Home() {
                     width={20}
                     height={20}
                     alt="menu icon"
-                    className='object-contain'
+                    className='object-contain  md:w-auto md:h-auto w-5 h-5'
                   />
                 </motion.div>
               )
@@ -178,11 +212,13 @@ export default function Home() {
 
           </div>
         </motion.div>
+      
         <motion.nav
           initial={false}
           animate={menu ? "open" : "closed"}
           className={menu ? "flex justify-center items-center" : "hidden"}
         >
+          
           <motion.ul
             variants={{
               open: {
