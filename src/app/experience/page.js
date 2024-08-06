@@ -162,10 +162,9 @@ function page() {
                     <h1 className={`${manrope.className} text-xl tracking-wide font-bold md:text-3xl lg:text-5xl md:text-left text-center`} >Full Stack Developer <br /> (Freelance Project)</h1>
 
                     <div className={`${manrope.className} text-sm tracking-wide px-4  font-normal md:text-lg md:w-full  lg:text-xl text-left lg:w-[900px]  space-y-4 `}>
-                        <h1>• Conducted a comprehensive study and analysis of speech emotion recognition (SER) techniques using Deep Neural Networks (DNN).</h1>
-                        <h1>• Designed and implemented an enhanced speech emotion recognition system using a Balanced Generative Adversarial Network (GAN) and an emotion-aware latent space, achieving an accuracy improvement from 70% to 85%.</h1>
-                        <h1>• Improved the learning stability of the Generative Adversarial Network through evolutionary data augmentation by applying genetic algorithms.</h1>
-                        <h1>• Evaluated the performance of the Generative Adversarial Network for speech emotion recognition, comparing it with state-of-the-art techniques such as LSTM and Transformer models.</h1>
+                        <h1>• Created a lead generation platform for villa owners, managing leads worth 30-40 lakhs daily.</h1>
+                        <h1>• Developed dashboards for lead management, villa blacklisting, account management, and data filtering based on several options.</h1>
+                        <h1>• Implemented advanced features to optimize lead tracking, data analysis, and operational efficiency for villa owners.</h1>
                     </div>
                     <div className='flex justify-evenly items-center'>
                         <a href="https://drive.google.com/drive/folders/18sQQH6VT9hjRzGjfLCxGWTreGsCgEloR?usp=sharing" className={`${manrope.className} flex justify-center items-center font-bold `} >
