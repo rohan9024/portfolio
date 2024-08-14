@@ -90,7 +90,7 @@ function page() {
 
         >
           <Image
-            src='/me.jpg'
+            src='/me.jpeg'
             width={1200}
             height={1200}
             alt="my image"
