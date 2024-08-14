@@ -134,21 +134,15 @@ function page() {
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ ease: "easeOut", duration: 1 }}
-                    className='md:w-1/3 flex justify-center items-center w-full bg-red-600'
+                    className='md:w-1/3 flex justify-center rounded-xl items-center w-full bg-red-600'
                 >
-                    {/* <Image
-                        src='/tce.png'
-                        width={1200}
-                        height={1200}
-                        alt="tce logo"
-                        className='w-[150px] md:w-[500px] md:h-[500px] h-[150px] object-cover '
-                    /> */}
+              
               <Image
                         src='/logo.png'
                         width={1200}
                         height={1200}
                         alt=" logo"
-                        className=' md:w-[300px] md:h-[500px]   md:object-contain'
+                        className=' md:w-[300px] md:h-[300px]   md:object-contain'
                     />
 
                 </motion.div>
@@ -168,7 +162,8 @@ function page() {
                         <h1>• Evaluated the performance of the Generative Adversarial Network for speech emotion recognition, comparing it with state-of-the-art techniques such as LSTM and Transformer models.</h1>
                     </div>
                     <div className='flex justify-evenly items-center'>
-                        <a href="https://drive.google.com/drive/folders/18sQQH6VT9hjRzGjfLCxGWTreGsCgEloR?usp=sharing" className={`${manrope.className} flex justify-center items-center font-bold `} >
+                 
+                        <a href="https://lunaleads.in/" className={`${manrope.className} flex justify-center items-center font-bold `} >
                             <h1 className='text-center md:text-lg lg:text-2xl text-sm bg-blue-600 px-3 py-3 md:w-56 lg:w-72 text-white rounded-lg shadow-lg cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 duration-300'>View Project</h1>
                         </a>
                       
