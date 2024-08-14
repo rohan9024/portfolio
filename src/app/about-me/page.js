@@ -86,7 +86,7 @@ function page() {
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ ease: "easeOut", duration: 1 }}
-          className='md:w-1/2 flex justify-center items-center w-full'
+          className='md:w-1/2 flex justify-center items-center w-full '
 
         >
           <Image
@@ -94,7 +94,7 @@ function page() {
             width={1200}
             height={1200}
             alt="my image"
-            className='w-[500px] md:h-[500px] h-[350px] object-cover rounded-full'
+            className='w-[500px] md:w-[800px] md:h-[600px] h-[350px] object-cover rounded-xl'
           />
         </motion.div>
 
@@ -102,9 +102,9 @@ function page() {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeOut", duration: 1 }}
-          className='md:w-1/2 space-y-4 w-full my-10 '
+          className=' space-y-4 w-full md:w-1/2 my-10 '
         >
-          <h1 className={`${raleway.className} text-xl tracking-wide font-bold md:text-3xl text-center    `} >Hey everyone👋 I'm Rohan Wandre</h1>
+          <h1 className={`${raleway.className} text-xl tracking-wide font-bold md:text-3xl text-center    `} >Hey everyone👋 <br className="md:hidden" /> I'm Rohan Wandre</h1>
           <h1 className={`${raleway.className} text-sm tracking-wide font-normal md:text-xl  text-center   `} >React Native Developer | Full Stack Developer | Open Source</h1>
         </motion.div>
 
