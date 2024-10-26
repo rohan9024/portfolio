@@ -70,7 +70,133 @@ function page() {
           Experience
         </h1>
       </div>
-      {/* Freelance Project */}
+      {/* Wipro */}
+      <div className="flex flex-col justify-center items-center md:flex-row md:space-x-10 md:my-10 md:mx-10 my-4 md:flex md:justify-center md:items-center">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+          className="md:w-1/3 flex justify-center items-center w-full"
+        >
+          <Image
+            src="/wipro.png"
+            width={1200}
+            height={1200}
+            alt="wipro logo"
+            className="w-[150px] md:w-[300px] md:h-[300px] h-[150px] object-contain  mb-20"
+          />
+        </motion.div>
+
+        <motion.div
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+          className="md:w-2/3 md:space-y-10 space-y-7 w-full my-10 "
+        >
+          <h1
+            className={`${manrope.className} text-xl tracking-wide font-bold md:text-3xl lg:text-5xl md:text-left text-center`}
+          >
+            Intern
+          </h1>
+
+          <div
+            className={`${manrope.className} text-sm tracking-wide  font-normal md:text-lg md:w-full  lg:text-xl text-left lg:w-[900px] w-[350px] space-y-4 `}
+          >
+            <h1>
+              • Developed a dynamic virtual agent using ServiceNow, leveraging
+              ServiceNow tables to enhance functionality.
+            </h1>
+            <h1>
+              • Set up a MySQL server on Linux, establishing remote access, and
+              led the team throughout the process.
+            </h1>
+            <h1>
+              • Leveraged Knowledge in ServiceNow Virtual Agent, MySQL, Linux.
+            </h1>
+          </div>
+          <div className="flex justify-evenly items-center">
+            <a
+              href="https://drive.google.com/file/d/18OjkFxFqkQsl4NwAmK-sQ4G5owArMWdX/view?usp=sharing"
+              className={`${manrope.className} flex justify-center items-center font-bold `}
+            >
+              <h1 className="text-center md:text-lg lg:text-2xl text-sm bg-blue-600 px-3 py-3 md:w-56 lg:w-72 text-white rounded-lg shadow-lg cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 duration-300">
+                View Certification
+              </h1>
+            </a>
+          </div>
+        </motion.div>
+      </div>
+      {/* Rajasthan Police */}
+      <div className="flex flex-col justify-center items-center md:flex-row md:space-x-10 md:my-10 md:mx-10 my-4 md:flex md:justify-center md:items-center">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+          className="md:w-1/3 flex justify-center items-center w-full"
+        >
+          <Image
+            src="/rajasthanPolice.png"
+            width={1200}
+            height={1200}
+            alt="rajasthan police logo"
+            className="w-[150px] md:w-[300px] md:h-[300px] h-[150px] object-contain  mb-20"
+          />
+        </motion.div>
+
+        <motion.div
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+          className="md:w-2/3 md:space-y-10 space-y-7 w-full my-10 "
+        >
+          <h1
+            className={`${manrope.className} text-xl tracking-wide font-bold md:text-3xl lg:text-5xl md:text-left text-center`}
+          >
+            Intern
+          </h1>
+
+          <div
+            className={`${manrope.className} text-sm tracking-wide  font-normal md:text-lg md:w-full  lg:text-xl text-left lg:w-[900px] w-[350px] space-y-4 `}
+          >
+            <h1>
+              • Developed Python scripts for efficient license plate extraction
+              and data querying, improving accuracy and speed; conducted data
+              cleaning to enhance surveillance insights.
+            </h1>
+            <h1>
+              • Designed API endpoints for seamless data flow and real-time
+              responsiveness, and created a CI/CD pipeline for automatic code
+              deployment from VM to GitHub.
+            </h1>
+            <h1>
+              • Created machine learning models for precise keypoint and knife
+              detection, enhancing threat identification.
+            </h1>
+            <h1>
+              • Created machine learning models for precise keypoint and knife
+              detection, enhancing threat identification.
+            </h1>
+            <h1>
+              • Optimized performance with multithreading, running multiple
+              machine learning models simultaneously on live feeds.
+            </h1>
+            <h1>
+              • Leveraged Knowledge in Python, FAST API, Data Cleaning, Keypoint
+              Detection, Multithreading, OpenCV, CI/CD
+            </h1>
+          </div>
+          {/* <div className="flex justify-evenly items-center">
+            <a
+              href="https://drive.google.com/file/d/18OjkFxFqkQsl4NwAmK-sQ4G5owArMWdX/view?usp=sharing"
+              className={`${manrope.className} flex justify-center items-center font-bold `}
+            >
+              <h1 className="text-center md:text-lg lg:text-2xl text-sm bg-blue-600 px-3 py-3 md:w-56 lg:w-72 text-white rounded-lg shadow-lg cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 duration-300">
+                View Certification
+              </h1>
+            </a>
+          </div> */}
+        </motion.div>
+      </div>
       <div className="flex flex-col justify-center items-center md:flex-row md:space-x-10 md:my-10 md:mx-10 my-4 md:flex md:justify-center md:items-center">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
@@ -155,7 +281,7 @@ function page() {
             width={1200}
             height={1200}
             alt=" logo"
-            className=" md:w-[300px] md:h-[300px]   md:object-contain"
+            className=" md:w-[300px] md:h-[300px]   md:object-contain "
           />
         </motion.div>
 
