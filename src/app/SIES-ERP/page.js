@@ -86,7 +86,7 @@ function page() {
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ ease: "easeOut", duration: 1 }}
-                    className='md:w-[360px] flex justify-center items-center w-full dark:bg-white '
+                    className='md:w-[360px] flex justify-center items-center w-full  '
                 >
 
                     <Image
