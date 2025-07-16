@@ -1,11 +1,69 @@
 [
   {
+    "name": "Smart India Hackathon Finalist",
+    "desc": "Top 5 against 500 teams all over India",
+    "project": "PharmaLink",
+    "keyFeature": [
+      "Real-time medicine availability tracking",
+      "Geo-based pharmacy lookup and routing",
+      "Secure API for inventory sync across suppliers",
+      "Role-based dashboards for pharmacists and distributors",
+      "End-to-end cold chain monitoring integration",
+      "Emergency medicine locator with live status",
+      "QR-based prescription verification",
+      "Scalable backend with GCP + Firebase",
+      "Offline support for rural accessibility"
+    ],
+    "images": ["/sih-1.jpg", "/sih-2.jpg"],
+    "banner": "/sih-8.jpg",
+    "route": null
+  },
+  {
+    "name": "Union Bank Finalist",
+    "desc": "Top 5 against 1200 teams all over India",
+    "project": "Finserve",
+    "keyFeature": [
+      "Unified customer dashboard for banking and insurance",
+      "Instant UPI-based microloan approval system",
+      "Real-time fraud detection using transaction pattern analysis",
+      "Secure Aadhaar and PAN-based user verification",
+      "Role-based portals for users, bank officials, and auditors",
+      "Automated KYC with document OCR and face match",
+      "Insights panel for credit score trends and repayment behavior",
+      "SMS/email alerts for transactions and EMI reminders",
+      "Fully scalable backend using Firebase + Firestore",
+      "Progressive Web App with offline-first support"
+    ],
+    "banner": "/union1.jpg",
+    "route": null
+  },
+  {
+    "name": "Rajasthan Police Finalist",
+    "desc": "Top 5 against 450 teams all over India",
+    "project": "Finserve",
+    "keyFeature": [
+      "Unified customer dashboard for banking and insurance",
+      "Instant UPI-based microloan approval system",
+      "Real-time fraud detection using transaction pattern analysis",
+      "Secure Aadhaar and PAN-based user verification",
+      "Role-based portals for users, bank officials, and auditors",
+      "Automated KYC with document OCR and face match",
+      "Insights panel for credit score trends and repayment behavior",
+      "SMS/email alerts for transactions and EMI reminders",
+      "Fully scalable backend using Firebase + Firestore",
+      "Progressive Web App with offline-first support"
+    ],
+    "banner": "/RIC.jpg",
+    "route": null
+  },
+
+  {
     "name": "Smart India Hackathon Qualifiers",
     "desc": "Winner of the Internal hackathon at Vidyalankar Polytechnic",
     "project": "News Fetcher",
     "keyFeature": ["Safe routing", "URL parameters", "URL Encoding"],
     "images": ["/SIH-1.jpg", "/SIH-2.jpg"],
-    "banner": "/SIH-1.jpg",
+    "banner": "/SIHV-1.jpg",
     "route": null
   },
 
@@ -87,6 +145,44 @@
     "keyFeature": null,
     "images": null,
     "banner": "/codepeak-1.jpeg",
+    "route": null
+  },
+  {
+    "name": "Winner of Cognition 2023",
+    "desc": "Inter College Competition",
+    "project": "Rescue Paws",
+    "keyFeature": [
+      "Unified customer dashboard for banking and insurance",
+      "Instant UPI-based microloan approval system",
+      "Real-time fraud detection using transaction pattern analysis",
+      "Secure Aadhaar and PAN-based user verification",
+      "Role-based portals for users, bank officials, and auditors",
+      "Automated KYC with document OCR and face match",
+      "Insights panel for credit score trends and repayment behavior",
+      "SMS/email alerts for transactions and EMI reminders",
+      "Fully scalable backend using Firebase + Firestore",
+      "Progressive Web App with offline-first support"
+    ],
+    "banner": "/cognition-23.jpg",
+    "route": null
+  },
+  {
+    "name": "Winner of Cognition 2024",
+    "desc": "Inter College Competition",
+    "project": "Foodland",
+    "keyFeature": [
+      "Unified customer dashboard for banking and insurance",
+      "Instant UPI-based microloan approval system",
+      "Real-time fraud detection using transaction pattern analysis",
+      "Secure Aadhaar and PAN-based user verification",
+      "Role-based portals for users, bank officials, and auditors",
+      "Automated KYC with document OCR and face match",
+      "Insights panel for credit score trends and repayment behavior",
+      "SMS/email alerts for transactions and EMI reminders",
+      "Fully scalable backend using Firebase + Firestore",
+      "Progressive Web App with offline-first support"
+    ],
+    "banner": "/cognition-24.png",
     "route": null
   }
 ]
