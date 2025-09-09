@@ -262,7 +262,7 @@ export default function Home() {
             className="flex flex-col justify-center items-center my-10 space-y-12"
           >
             <motion.a
-              href="https://drive.google.com/file/d/1-aYazGEtQyGtNaLtDeo3a1TWTvDnlPqL/view?usp=sharing"
+              href="https://drive.google.com/file/d/1G_cGoa5NJ15C6BYrsb8UhydR9NNvCe9Q/view?usp=sharing"
               variants={itemVariants}
               className="text-xl "
             >
