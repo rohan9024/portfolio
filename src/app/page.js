@@ -169,7 +169,7 @@ export default function Home() {
             className={`${manrope.className} hidden md:flex md:justify-evenly md:items-center md:font-medium md:w-92 space-x-12`}
           >
             <a
-              href="https://drive.google.com/file/d/1-aYazGEtQyGtNaLtDeo3a1TWTvDnlPqL/view?usp=sharing"
+              href="https://drive.google.com/file/d/1MpqfSl2AGbE9l3qDlEOc_jmGRYzykkw5/view?usp=sharing"
               className="transition ease-in  hover:text-gray-300 text-gray-500 duration-150cursor-pointer "
             >
               Resume
