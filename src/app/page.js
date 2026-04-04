@@ -169,7 +169,7 @@ export default function Home() {
             className={`${manrope.className} hidden md:flex md:justify-evenly md:items-center md:font-medium md:w-92 space-x-12`}
           >
             <a
-              href="https://drive.google.com/file/d/1MpqfSl2AGbE9l3qDlEOc_jmGRYzykkw5/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ilIXya77kW6IWZT6GeWsKVed70x5ZPuI/view?usp=sharing"
               className="transition ease-in  hover:text-gray-300 text-gray-500 duration-150cursor-pointer "
             >
               Resume
@@ -303,11 +303,12 @@ export default function Home() {
           </h1>
           <h1 className="font-bold md:text-4xl text-3xl m-auto">
             {" "}
-            A Software Engineer based in Mumbai. I develop applications that
-            help us get more out of life and work.
+            A Software and Machine Learning Engineer building data driven
+            applications, real time AI systems, and scalable backend services
+            using Python, FastAPI, and modern ML techniques.{" "}
           </h1>
           <h1 className="font-medium md:text-2xl text-blue-500 text-xl w-64 md:w-full ">
-            Currently studying at SIES Graduate School of Technology
+            Currently studying Msc in NLP at University of Trier
           </h1>
         </motion.div>
         <div
