@@ -301,9 +301,7 @@ export default function Home() {
           </h1>
           <h1 className="font-bold md:text-4xl text-3xl m-auto">
             {" "}
-            A Software and Machine Learning Engineer building data driven
-            applications, real time AI systems, and scalable backend services
-            using Python, FastAPI, and modern ML techniques.{" "}
+            I build AI-powered applications and scalable software that solve real-world problems..{" "}
           </h1>
           <h1 className="font-medium md:text-2xl text-blue-500 text-xl w-64 md:w-full ">
             Currently studying Msc in NLP at University of Trier
