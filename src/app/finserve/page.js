@@ -265,7 +265,7 @@ function page() {
       {/* Browse other projects */}
       <div className="flex justify-between items-center mx-5 mt-10 md:mr-5 lg:mx-10 xl:mx-96 md:mt-16">
         <Link
-          href="/spotify-clone"
+          href="/finserve"
           className="flex flex-col md:flex-row justify-center items-center p-2  md:dark:space-x-5 md:dark:space-y-0 dark:space-y-5"
         >
           <div className="object-contain rounded-full cursor-pointer p-4 transition hover:bg-gray-300 dark:bg-white hover:duration-150">
@@ -273,26 +273,25 @@ function page() {
           </div>
 
           <h1 className={`${raleway.className} text-md font-bold md:text-3xl`}>
-            Spotify Clone
+            Finserve
           </h1>
         </Link>
 
         <Link
-          href="/social-media-manager"
-          className="hidden md:flex flex-col md:flex-row justify-center items-center p-2 dark:space-x-5"
+          href="/pharmalink"
+          className="hidden md:flex flex-col md:flex-row justify-center items-center p-2 md:dark:space-x-5"
         >
           <h1
             className={`${raleway.className} text-md font-bold md:text-3xl  `}
           >
-            Social Media Manager
+            Pharmalink
           </h1>
-
           <div className="object-contain rounded-full cursor-pointer p-4 transition hover:bg-gray-300 dark:bg-white hover:duration-150">
             <Image src="/right.png" width={25} height={25} alt="right icon" />
           </div>
         </Link>
         <Link
-          href="/social-media-manager"
+          href="/pharmalink"
           className="md:hidden flex flex-col md:flex-row justify-center items-center p-2 dark:space-y-5"
         >
           <div className="object-contain rounded-full cursor-pointer p-4 transition hover:bg-gray-300 dark:bg-white hover:duration-150">
@@ -302,7 +301,7 @@ function page() {
           <h1
             className={`${raleway.className} text-md font-bold md:text-3xl  `}
           >
-            Social Media Manager
+            Pharmalink
           </h1>
         </Link>
       </div>
