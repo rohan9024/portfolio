@@ -79,6 +79,61 @@ function page() {
           className="md:w-1/3 flex justify-center items-center w-full"
         >
           <Image
+            src="/sph-logo.svg"
+            width={1200}
+            height={1200}
+            alt="sph logo"
+            className="w-[150px] md:w-[300px] md:h-[300px] h-[150px] object-contain  mb-20"
+          />
+        </motion.div>
+
+        <motion.div
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+          className="md:w-2/3 md:space-y-10 space-y-7 w-full my-10 "
+        >
+          <h1
+            className={`${manrope.className} text-xl tracking-wide font-bold md:text-3xl lg:text-5xl md:text-left text-center`}
+          >
+            AI Intern
+          </h1>
+
+          <div
+            className={`${manrope.className} text-sm tracking-wide  font-normal md:text-lg md:w-full  lg:text-xl text-left lg:w-[900px] w-[350px] space-y-4 `}
+          >
+            <h1>
+              • Developed automation workflows for B2B electronics manufacturers and suppliers, digitizing paper-based processes.
+            </h1>
+            <h1>
+             • Engineered AI agents and automated workflows using Python, n8n, and LLMs to handle repetitive customer tasks.
+            </h1>
+            <h1>
+              • Built a LinkedIn post-performance estimation tool using Monte Carlo simulation to estimate ranges for likes, comments, and impressions.
+            </h1>
+          </div>
+          <div className="flex justify-evenly items-center">
+            <a
+              href="https://drive.google.com/file/d/1S3fUvh4niLp9u-Bdb-Pl0MYy8kd8uh5E/view"
+              className={`${manrope.className} flex justify-center items-center font-bold `}
+            >
+              <h1 className="text-center md:text-lg lg:text-2xl text-sm bg-blue-600 px-3 py-3 md:w-56 lg:w-72 text-white rounded-lg shadow-lg cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 duration-300">
+                View Certification
+              </h1>
+            </a>
+          </div>
+       
+        </motion.div>
+      </div>
+      {/* Wipro */}
+      <div className="flex flex-col justify-center items-center md:flex-row md:space-x-10 md:my-10 md:mx-10 my-4 md:flex md:justify-center md:items-center">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+          className="md:w-1/3 flex justify-center items-center w-full"
+        >
+          <Image
             src="/wipro.png"
             width={1200}
             height={1200}
@@ -185,16 +240,16 @@ function page() {
               Detection, Multithreading, OpenCV, CI/CD
             </h1>
           </div>
-          {/* <div className="flex justify-evenly items-center">
+          <div className="flex justify-evenly items-center">
             <a
-              href="https://drive.google.com/file/d/18OjkFxFqkQsl4NwAmK-sQ4G5owArMWdX/view?usp=sharing"
+              href="https://drive.google.com/file/d/17OKS3by9cxJW_YuGdNWPvYtXJnTiI0xo/view"
               className={`${manrope.className} flex justify-center items-center font-bold `}
             >
               <h1 className="text-center md:text-lg lg:text-2xl text-sm bg-blue-600 px-3 py-3 md:w-56 lg:w-72 text-white rounded-lg shadow-lg cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 duration-300">
                 View Certification
               </h1>
             </a>
-          </div> */}
+          </div>
         </motion.div>
       </div>
       <div className="flex flex-col justify-center items-center md:flex-row md:space-x-10 md:my-10 md:mx-10 my-4 md:flex md:justify-center md:items-center">

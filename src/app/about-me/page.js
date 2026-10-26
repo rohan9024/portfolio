@@ -90,7 +90,7 @@ function page() {
 
         >
           <Image
-            src='/me.jpeg'
+            src='/photo.jpg'
             width={1200}
             height={1200}
             alt="my image"
@@ -105,7 +105,7 @@ function page() {
           className=' space-y-4 w-full md:w-1/2 my-10 '
         >
           <h1 className={`${raleway.className} text-xl tracking-wide font-bold md:text-3xl text-center    `} >Hey everyone👋 <br className="md:hidden" /> I'm Rohan Wandre</h1>
-          <h1 className={`${raleway.className} text-sm tracking-wide font-normal md:text-xl  text-center   `} >React Native Developer | Full Stack Developer | Open Source</h1>
+          <h1 className={`${raleway.className} text-sm tracking-wide font-normal md:text-xl  text-center   `} >Building practical AI, NLP, and LLM-powered applications that solve real-world problems.</h1>
         </motion.div>
 
       </div>

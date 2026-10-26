@@ -5,8 +5,6 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import { Manrope } from "next/font/google";
 import { Raleway } from "next/font/google";
-import netflix from "../../assets/netflix.png";
-import spotify from "../../assets/spotify.png";
 import firebase from "../../assets/firebase.png";
 import react from "../../assets/react.png";
 import postman from "../../assets/postman.png";
@@ -648,118 +646,9 @@ export default function Home() {
             </motion.div>
           </Link>
 
-          {/* Donation Box*/}
-          <Link href="/donation-box">
-            <motion.div
-              initial={{ opacity: 0, y: -120 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ ease: "easeOut", duration: 1 }}
-              className="md:flex md:flex-row flex flex-col border border-gray-100 dark:border-gray-600 dark:hover:border-blue-600 transition ease-in-out duration-150 dark:hover:border-2 rounded-lg shadow-2xl md:w-[1140px] md:h-[489px] w-[300px] h-[370px] "
-            >
-              <Image
-                src={d3}
-                alt="Donation Box"
-                className="object-cover w-[400px] h-[300px] md:min-h-[488px]  md:w-3/4 "
-              />
-              <div
-                className={`${raleway.className} flex flex-col mx-6 my-4 md:w-1/4 justify-center space-y-4`}
-              >
-                <h1 className="font-medium text-sm md:text-lg text-blue-500">
-                  {" "}
-                  WEB DEVELOPMENT
-                </h1>
-                <h1 className="font-medium text-xl md:text-4xl">
-                  Donation Box
-                </h1>
-                <div className="flex justify-start space-x-4">
-                  <Image
-                    src={firebase}
-                    width={30}
-                    height={30}
-                    alt="firebase icon"
-                    className="object-contain rounded-full"
-                  />
-                  <Image
-                    src={nextjs}
-                    width={60}
-                    height={60}
-                    alt="next js icon"
-                    className="object-contain rounded-full"
-                  />
-                  <Image
-                    src={fb}
-                    width={30}
-                    height={30}
-                    alt="Facebook API"
-                    className="object-contain rounded-full"
-                  />
-                  <Image
-                    src={ig}
-                    width={30}
-                    height={30}
-                    alt="Graph API"
-                    className="object-contain rounded-full"
-                  />
-                </div>
-              </div>
-            </motion.div>
-          </Link>
+   
 
-          {/* Spotify Clone*/}
-          <Link href="/spotify-clone">
-            <motion.div
-              initial={{ opacity: 0, y: -120 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ ease: "easeOut", duration: 1 }}
-              className="md:flex md:flex-row flex flex-col border border-gray-100 dark:border-gray-600 dark:hover:border-blue-600 transition ease-in-out duration-150 dark:hover:border-2 rounded-lg shadow-2xl md:w-[1140px] md:h-[489px] w-[300px] h-[370px] "
-            >
-              <Image
-                src={spotify}
-                alt="Spotify Clone"
-                className="object-cover w-[400px] h-[300px] md:min-h-[488px]  md:w-3/4 "
-              />
-              <div
-                className={`${raleway.className} flex flex-col mx-6 my-4 md:w-1/4 justify-center space-y-4 `}
-              >
-                <h1 className="font-medium text-sm md:text-lg text-blue-500">
-                  API | WEB DEVELOPMENT
-                </h1>
-                <h1 className="font-medium text-xl md:text-4xl">
-                  Spotify Clone
-                </h1>
-                <div className="flex justify-start space-x-4">
-                  <Image
-                    src={firebase}
-                    width={30}
-                    height={30}
-                    alt="firebase icon"
-                    className="object-contain rounded-full"
-                  />
-                  <Image
-                    src={react}
-                    width={30}
-                    height={30}
-                    alt="react icon"
-                    className="object-contain rounded-full"
-                  />
-                  <Image
-                    src="/spotify.png"
-                    width={30}
-                    height={30}
-                    alt="spotify API"
-                    className="object-contain rounded-full"
-                  />
-                  <Image
-                    src={postman}
-                    width={30}
-                    height={30}
-                    alt="postman icon"
-                    className="object-contain rounded-full"
-                  />
-                </div>
-              </div>
-            </motion.div>
-          </Link>
+        
 
           {/* Ettara */}
           <Link href="/codeshastra">
@@ -852,72 +741,7 @@ export default function Home() {
             </motion.div>
           </Link>
 
-          {/* Netflix clone */}
-          <Link href="/netflix-clone">
-            <motion.div
-              initial={{ opacity: 0, y: -120 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ ease: "easeOut", duration: 1 }}
-              className="md:flex md:flex-row flex flex-col border border-gray-100 dark:border-gray-600 dark:hover:border-blue-600 transition ease-in-out duration-150 dark:hover:border-2 rounded-lg shadow-2xl md:w-[1140px] md:h-[489px] w-[300px] h-[370px] "
-            >
-              <Image
-                src={netflix}
-                width={667}
-                height={457}
-                alt="Netflix Clone"
-                className="object-cover w-[400px] h-[300px] md:min-h-[488px] md:w-3/4 "
-              />
-              <div
-                className={`${raleway.className} flex flex-col md:w-1/4 justify-center space-y-4 w-full mx-6 my-4`}
-              >
-                <h1
-                  className={`${raleway.className} font-medium text-sm md:text-lg text-blue-500`}
-                >
-                  API | WEB DEVELOPMENT
-                </h1>
-                <h1 className="font-medium text-xl md:text-4xl">
-                  Netflix Clone
-                </h1>
-                <div className="flex justify-start space-x-4">
-                  <Image
-                    src={firebase}
-                    width={30}
-                    height={30}
-                    alt="firebase icon"
-                    className="object-contain rounded-full"
-                  />
-                  <Image
-                    src={react}
-                    width={30}
-                    height={30}
-                    alt="react icon"
-                    className="object-contain rounded-full"
-                  />
-                  <Image
-                    src={moviesdbapi}
-                    width={30}
-                    height={30}
-                    alt="movies db api icon"
-                    className="object-contain rounded-full"
-                  />
-                  <Image
-                    src={postman}
-                    width={30}
-                    height={30}
-                    alt="postman icon"
-                    className="object-contain rounded-full"
-                  />
-                  <Image
-                    src={youtube}
-                    width={30}
-                    height={30}
-                    alt="youtube icon"
-                    className="object-contain "
-                  />
-                </div>
-              </div>
-            </motion.div>
-          </Link>
+
         </div>
 
         {/* <Footer /> */}
